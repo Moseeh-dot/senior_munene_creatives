@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Contact us.</title> 
+   <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+   /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: ;
+            padding: 6px 4px;
+            border-radius: 60%;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+         .forms{ 
+           color: gold;
+           font-size: 36px;
+           background:  linear-gradient(to right, #00aaff, #004466);
+           align-content: center;
+         }
+         /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .social-icons {
+            margin: 15px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffd700;
+        }
+
+  </style>
+
+</head>
+<body>
+   <header>
+      <nav class="navbar">  
+        <h2 class="logo" style="color:gold;">Señor Munene</h2>
+         <ul class="nav-links">
+           <li><a href="Home.html">Home</a></li>
+           <li><a href="portfolio.html">Portfolio</a></li>
+           <li><a href="Contact.html">Contact us</a></li>
+         </ul>
+      </nav>
+    </header>
+  
+  <section class="forms">
+    <form action="process.php" method="post">
+     <label for="countryCode">Phone Number:</label>
+      <div style="display: flex; gap: 5px;">
+        <select name="countryCode" id="countryCode" required>
+            <option value="">Select Code</option>
+            <option value="+254">🇰🇪 +254 (Kenya)</option>
+            <option value="+255">🇹🇿 +255 (Tanzania)</option>
+            <option value="+256">🇺🇬 +256 (Uganda)</option>
+            <option value="+257">🇧🇮 +257 (Burundi)</option>
+            <option value="+250">🇷🇼 +250 (Rwanda)</option>
+            <option value="+211">🇸🇸 +211 (South Sudan)</option>
+            <option value="+252">🇸🇴 +252 (Somalia)</option>
+            <option value="+253">🇩🇯 +253 (Djibouti)</option>
+            <option value="+248">🇸🇨 +248 (Seychelles)</option>
+            <option value="+269">🇰🇲 +269 (Comoros)</option>
+        </select>
+
+        <input type="tel" name="phoneNumber" placeholder="Enter phone number" required>
+    </div>
+    
+    <input type="submit" value="Submit" class="mit">
+</form>
+  <form action="process.php" method="post">
+   <div>
+    <label>Name:</label>
+    <input type="text" name="username" required>
+   
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    </div>
+    
+    <input type="submit" value="Submit" class="mi">
+</form>
+  <form action="process.php" method="post">
+    <label for="idea">Describe Your Idea:</label><br>
+    <textarea id="idea" name="ideaDescription" rows="5" cols="40" placeholder="Type your idea here..." required></textarea>
+    <input type="submit" value="Submit">
+  </form>
+ </section>
+  
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.whatsapp.com/+254758384925"target="_blank" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@bl._.mose" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/th3e.real_munene" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Senior Munene Creatives. All rights reserved.</p>
+    </footer>
+
+  </body>
+ </html>
+
+</body>
+</html>
